@@ -20,6 +20,8 @@ public class UserTest {
 
         Stu stu = applicationContext.getBean("stu", Stu.class);
         System.out.println(stu);
+        System.out.println(stu);
+
     }
 
 
