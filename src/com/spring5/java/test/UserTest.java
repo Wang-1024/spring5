@@ -21,7 +21,11 @@ public class UserTest {
         Stu stu = applicationContext.getBean("stu", Stu.class);
         System.out.println(stu);
         System.out.println(stu);
+    }
 
+    @Test
+    public void test(){
+        System.out.println("hot-fix changed");
     }
 
 
