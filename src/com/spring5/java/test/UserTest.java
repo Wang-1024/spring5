@@ -26,6 +26,7 @@ public class UserTest {
     @Test
     public void test(){
         System.out.println("hot-fix changed masterchanged");
+        System.out.println("hot-fix changed twice");
     }
 
 
