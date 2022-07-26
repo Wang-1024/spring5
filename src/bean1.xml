@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.spring5.java.demo1.User">
+        <constructor-arg name="id" value="1"></constructor-arg>
+        <constructor-arg name="name" value="张三"></constructor-arg>
+        <constructor-arg name="password" value="0000"></constructor-arg>
+        <constructor-arg name="department" ref="department"></constructor-arg>
+        <property name="department.name" value="财务部"></property>
+    </bean>
+
+    <bean id="department" class="com.spring5.java.demo1.Department">
+        <property name="name" value="安保部"></property>
+    </bean>
+
+    <bean id="stu" class="com.spring5.java.demo1.Stu">
+        <property name="courses">
+            <array>
+                <value>Java</value>
+                <value>C++</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>张三</value>
+                <value>李四</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="姓名" value="王五"></entry>
+                <entry key="年龄" value="18"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>
